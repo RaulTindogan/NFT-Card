@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Outfit:wght@300;400;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: hsl(217, 54%, 11%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    background-color: hsl(216, 50%, 16%);
+    width: 330px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 10px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image {
+    width: 280px;
+    height: 260px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.cover {
+    width: 280px;
+    height: 260px;
+    border-radius: 10px;
+    position: absolute;
+    cursor: pointer;
+    opacity: 0;
+    background-color: hsla(178, 100%, 50%, 0.571);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.view-image {
+    width: 50px;
+    height: 50px;
+}
+
+.post {
+    margin-top: 20px;
+    padding: 0 15px;
+}
+
+h2 {
+    font-weight: bold;
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+}
+
+.desc {
+    margin-top: 20px;
+    color: hsla(0, 0%, 100%, 0.608);
+    font-weight: 300;
+}
+
+.time-container {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.amount {
+    display: flex;
+    align-items: center;
+    color: hsl(178, 100%, 50%);
+    font-weight: 600;
+}
+
+.icon {
+    margin-right: 5px;
+}
+
+.time {
+    display: flex;
+    align-items: center;
+    font-weight: 300;
+    color: hsla(0, 0%, 100%, 0.608);
+}
+
+
+hr {
+    width: 90%;
+    height: 1px;
+    border: none;
+    background-color:  hsl(215, 32%, 27%);
+    margin: 15px 0;
+}
+
+.owner {
+    width: 100%;
+    padding: 0 15px;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    color: hsla(0, 0%, 100%, 0.608);;
+}
+
+.avatar {
+    width: 30px;
+    height: 30px;
+    border: solid white 1px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.owner span {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.886);
+    cursor: pointer;
+}
+
+.owner span:hover, h2:hover {
+    color: hsl(178, 100%, 50%);
+}
+
+.image-container:hover .cover {
+    opacity: 1;
+}
